@@ -72,8 +72,7 @@
 								hasItems: dayHasItems(day),
 								selectionStart: isSameDate(day, selectionStart),
 								selectionEnd: isSameDate(day, selectionEnd),
-							},
-							...((dateClasses && dateClasses[isoYearMonthDay(day)]) || null),
+							}
 						]"
 						:aria-grabbed="
 							enableDateSelection ? dayIsSelected(day) : 'undefined'
